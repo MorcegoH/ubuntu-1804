@@ -36,12 +36,12 @@ PermitRootLogin no
 
 # Usuários que tem permissão de acesso remoto ao Servidor de OpenSSH, separados por espaço, deve existir no servidor
 # Usuários listados no arquivo /etc/passwd
-AllowUsers vaamonde
+AllowUsers morcego
 
 # Grupos que tem permissão de acesso remoto ao Servidor de OpenSSH, cuidado, se você usar a variável AllowUsers
 # o grupo padrão do usuário precisa está liberado na linha AllowGroups, separados por espaço, deve existir no servidor
 # Grupos listados no arquivo /etc/group
-AllowGroups vaamonde
+AllowGroups morcego
 
 # Usuários que não tem permissão de acesso remoto ao Servidor de OpenSSH, separados por espaço, deve existir no servidor
 # Usuários listados no arquivo /etc/passwd
@@ -78,7 +78,7 @@ MaxStartups 5:60:10
 AddressFamily inet
 
 # Endereço IP do Servidor de OpenSSH que está liberado para permitir conexões remotas via protocolo SSH
-ListenAddress 172.16.1.20
+ListenAddress 172.16.26.20
 
 # Não ler os arquivos de configurações ~/.rhosts e ~/.shosts
 IgnoreRhosts yes
