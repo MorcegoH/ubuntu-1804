@@ -13,9 +13,9 @@
 # Liberando apenas um computador para o acesso remoto no SSH
 # Logando as informações de acesso no arquivo de log: /var/log/tcpwrappers-allow-ssh.log
 #
-sshd: 172.16.1. : spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
-mysqld: 172.16.1. : spawn /bin/echo "$(date) Conexão Liberada - MySQL - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
-in.telnetd: 172.16.1. : spawn /bin/echo "$(date) Conexão Liberada - Telnet - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+sshd: 172.16.26. : spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+mysqld: 172.16.26. : spawn /bin/echo "$(date) Conexão Liberada - MySQL - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+in.telnetd: 172.16.26. : spawn /bin/echo "$(date) Conexão Liberada - Telnet - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
 
 # Exemplos de configuração:
 # Liberando uma subrede
